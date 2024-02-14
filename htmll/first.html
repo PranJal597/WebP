@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html, web development">
+    <meta name="robots" content="index, follow">
+    <title>WebPage</title>
+</head>
+
+<body>
+    <!--6 different tags-->
+    <h1>Heading One</h1>
+    <h2>Heading One</h2>
+    <h3>Heading One</h3>
+    <h4>Heading One</h4>
+    <h5>Heading One</h5>
+    <h6>Heading One</h6>
+    <!--Inline elements: Do not start on a new line-->
+    <!--<strong>,<em>,<a>,span etc-->
+
+    <!--Block elements: Start on a new line-->
+    <!--<div>,<h1>-<h6>,<p>,<form> etc-->
+
+    <!--<em> - emphasized converts into italic bydefualt but you can change it into any font style you want by css-->
+
+    <p>
+        In this crash course I will cram as much about HTML that I can. This is meant for <strong>absolute
+            beginners</strong>. If you are interested in learning HTML but know nothing, then you are in the right
+        place. We will be creating a cheat sheet with all of the common <em>HTML5 tags, attributes, semantic
+            markup</em>, etc. We will not be focusing on CSS in this video.
+    </p>
+    <p>first <br>this is new line</p>
+    <hr>
+    <p>second</p>
+    <p>third</p>
+    <a href="http://google.com" target="_blank">Open Google</a><br>
+    <a href="http://facebook.com" target="_blank">Open facebook</a>
+    <br>
+    <img src="harry.jpg" alt="Error Loading Image">
+    </a>
+
+    <!--Lists-->
+    <!--ul- unordered list-->
+    <!--ol- ordered list-->
+    <ul type="circle">
+        <li>List Name 1</li>
+        <li>List Name 2</li>
+        <li>List Name 3</li>
+        <li>List Name 4</li>
+        <ul>
+            <li>another list</li>
+        </ul>
+    </ul>
+
+    <ol type="a">
+        <li>List Name 1</li>
+        <li>List Name 2</li>
+        <ol>
+            <li>another list</li>
+        </ol>
+        <li>List Name 3</li>
+        <li>List Name 4</li>
+    </ol>
+
+    <!--Table-->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pranjal</td>
+                <td>22</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Marry</td>
+                <td>32</td>
+                <td>Female</td>
+            </tr>
+    </table>
+    <br>
+    <!--Forms-->
+    <form action="process.php">
+        <div>
+            <label for="name"> Name:</label>
+            <input type="Text" name="myName" id="name" placeholder="Enter First Name">
+        </div>
+        <br>
+        <div>
+            <label for="role"> Role:</label>
+            <input type="Text" name="myRoll" id="role">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Age: <input type="number" name="age" value="30">
+        </div>
+        <br>
+        <div>
+            Birth Date: <input type="date" name="birthdate">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car:</label>
+            <Select name="Car" id="car">
+                <option value="swift">Swift</option>
+                <option value="alto">Alto</option>
+                <option value="Others">Others</option>
+            </Select>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> 
+            Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender"> 
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility">
+        </div>
+        <br>
+        <div>
+            Write about Yourself: <br><textarea name="myText" cols="40" rows="6"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+    </form>
+    <br>
+    
+    <!--HTML Entities-->
+    <div class="container">
+        <p>This is another &nbsp; &nbsp; paragraph with two spaces</p>
+        <p>Paragraph is written like this &lt;p&gt; </p>
+        <p>Pound is written like this &pound; </p>
+        <p>Another character is &rAarr; </p>
+        <p>Empty character is written like this &#8203; </p>
+    </div>
+
+</body>
+
+</html>
